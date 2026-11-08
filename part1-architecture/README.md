@@ -1,5 +1,6 @@
 # Part 1: Architecture
 
-`customer-email-support-agent-workflow.pdf` is the one-page diagram of a customer email support agent.
+- `architecture-one-page.pdf`: the one-page submission. Architecture diagram of a customer email support agent, with trade-offs and failure points.
+- `customer-email-support-agent-workflow.pdf`: the full-size diagram only.
 
-It shows how an incoming email flows through the agent, which tools it can use, the knowledge base, and when it escalates to a human.
+The agent classifies each incoming email, retrieves history and FAQs, drafts a reply, and sends anything risky or unsupported to a human agent. Every draft is approved by a human before sending.
