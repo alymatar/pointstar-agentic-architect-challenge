@@ -14,6 +14,5 @@ My solution to the three-part assessment. Each part lives in its own folder.
 2. Install: `pip install requests python-dotenv playwright python-telegram-bot`
 3. For Part 2 only: `playwright install chromium`
 4. Copy `.env.example` to `.env` inside the part's folder and fill in the values.
-5. Never commit `.env`. It is in `.gitignore`.
 
 The LLM calls use any OpenAI-compatible chat endpoint (`LLM_BASE_URL`, `LLM_API_KEY`, `LLM_MODEL`).
