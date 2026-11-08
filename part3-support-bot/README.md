@@ -11,6 +11,7 @@ A Telegram bot that answers customer questions from a sample FAQ document, can d
 | `calculator.py` | Safe add / subtract / multiply / divide with input checks. |
 | `conversation_store.py` | SQLite memory: last 20 messages per user, plus a saved name that /reset does not delete. |
 | `config.py` | Loads and validates settings from `.env`. |
+| `novadesk_faq.md` | Sample document for the bot to search. |
 | `.env.example` | Template of the settings you need. |
 
 ## Run
@@ -19,7 +20,7 @@ pip install python-telegram-bot requests python-dotenv
 copy .env.example .env     (then fill in the values)
 python bot.py
 ```
-Set `DOCUMENT_PATH` to the path of the text document the bot should search (paragraphs separated by a blank line). `TELEGRAM_ALLOWED_USER_ID` is your numeric Telegram ID.
+Set `DOCUMENT_PATH=novadesk_faq.md`. `TELEGRAM_ALLOWED_USER_ID` is your numeric Telegram ID.
 
 ## Commands
 - `/start` greeting
